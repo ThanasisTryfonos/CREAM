@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Definitions id="moodleApplication" name="Moodle Application">
+	<NodeType name="MySQLDatabase">
+	</NodeType>
+	<NodeType name="MoodleDb">
+		<DerivedFrom typeRef="MySQLDatabase" />
+		<Interfaces>
+			<Interface
+				name="http://docs.oasis-open.org/tosca/ns/2011/12/interfaces/lifecycle">
+				<Operation name="install" />
+				<Operation name="configure" />
+				<Operation name="start" />
+				<Operation name="uninstall" />
+			</Interface>
+		</Interfaces>
+	</NodeType>
+	<ServiceTemplate id="Moodle" name="Moodle Template">
+		<TopologyTemplate>
+			<NodeTemplate name="Moodle DB" id="MoodleDB" type="mt:MoodleDb">
+				<Properties>
+					<MoodleDbProperties>
+						<DBName>moodledb</DBName>
+						<DBUser>root</DBUser>
+						<DBPassword>123</DBPassword>
+						<mySqlPort>3306</mySqlPort>
+						<ConfigPath>/var/www/html/app/moodle/config.php</ConfigPath>
+					</MoodleDbProperties>
+				</Properties>
+			</NodeTemplate>
+		</TopologyTemplate>
+	</ServiceTemplate>
+</Definitions>

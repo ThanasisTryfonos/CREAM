@@ -1,0 +1,242 @@
+@import url(http://fonts.googleapis.com/css?family=Days+One);
+
+@import url(http://fonts.googleapis.com/css?family=Signika+Negative:400,300);
+
+.projectResource {
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid #565656;
+	border-radius: 4px;
+	box-shadow: 0 0 8px #767676 inset;
+	color: #FFFFFF;
+	font-size: 15px;
+	margin: 6px 8px;
+	opacity: 0.9;
+	padding: 8px 10px 8px 40px;
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+
+.projectResource:hover {
+	background-color: #FFA500;
+	color: #323232;
+	cursor: move;
+	text-shadow: 1px 1px 1px #FFFFFF;
+}
+
+#main {
+	font-size: 16px;
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	background: url('../images/subtle_freckles.png');
+	font-family: 'Signika Negative', sans-serif;
+}
+
+#header {
+	color: #565656;
+	font-family: 'Days One', sans-serif;
+	font-size: 15px;
+	height: auto;
+	margin-left: 0;
+	margin-top: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.header-inner {
+	padding: 0 50px;
+}
+
+#header h1 {
+	margin: 0;
+	padding: 10px 0;
+}
+
+section#operationsMenu {
+	float: right;
+	padding: 15px 0;
+}
+
+section#operationsMenu a {
+	background: none repeat scroll 0 0 #FFA500;
+	box-shadow: 0 0 16px #D56400 inset;
+	color: #FFFFFF;
+	display: inline-block;
+	font-size: 15px;
+	padding: 4px 16px;
+	text-shadow: 0 0 1px #909090;
+}
+
+#header hgroup {
+	float: left;
+}
+
+#footer {
+	border-top: 1px solid #DEDEDE;
+	box-shadow: 2px 2px 3px #FFFFFF inset;
+	color: #676767;
+	padding: 10px 0;
+	text-align: center;
+}
+
+#cloudAppDesignerInterface {
+	border: 2px solid #DEDEDE;
+	box-shadow: 2px 2px 3px #FFFFFF inset;
+	height: 500px;
+}
+
+.clear {
+	clear: both;
+}
+
+#cloudAppDesignerArea {
+	float: right;
+	height: 100%;
+	width: 79%;
+}
+
+#projectResourceToolbox {
+	background: url("../images/irongrip.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+	float: left;
+	height: 100%;
+	min-height: 248px;
+	width: 20%;
+}
+
+#render {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+#resource-categories-list {
+	margin: 0;
+	padding: 0;
+}
+
+#resource-categories-list h3 {
+	background: url("../images/black_linen_v2.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+	border: medium none;
+	color: #FFFFFF;
+	cursor: pointer;
+	margin: 2px 1px;
+	padding: 4px 26px;
+}
+
+#resource-categories-list h3:hover {
+	text-shadow: 0 0 7px #A2A2A2;
+}
+
+li.resource-category .resource-children {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	border: medium none;
+	padding: 0;
+}
+
+.ui-state-highlight,.ui-widget-content .ui-state-highlight,.ui-widget-header .ui-state-highlight {
+	background: #FFE45C;
+	border: none;
+	color: #000;
+	opacity: 0.7;
+}
+
+.w {
+	border: 1px solid #565656;
+	border-radius: 4px;
+	box-shadow: 0 0 22px #434343 inset;
+	color: #212121;
+	font-size: 15px;
+	padding: 10px 27px 8px 10px;
+	width: auto;
+}
+
+.ajaxLoad {
+	background: url("../images/ajax.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+	height: 128px;
+	opacity: 0.6;
+	width: auto;
+}
+
+.ApacheWebServer {
+	background-image: url("../images/ApacheWebServer.png");
+}
+
+.ApachePHPModule {
+	background: url("../images/ApachePHPModule.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+}
+
+.MySQL {
+	background: url("../images/MySQL.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+}
+
+.MoodleWebApplication {
+	background: url("../images/MoodleWebApplication.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+}
+
+.Ubuntu {
+	background: url("../images/Ubuntu.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+}
+
+.AmazonEC2 {
+	background: url("../images/AmazonEC2.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+}
+
+.AmazonEC2 {
+	background: url("../images/AmazonEC2.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+}
+
+.University {
+	background: url("../images/University.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+}
+
+.Student {
+	background: url("../images/Student.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+}
+
+.Instructor {
+	background: url("../images/Instructor.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+}
+
+.Commitment {
+	background: url("../images/Commitment.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+}
+
+.Contract {
+	background: url("../images/Contract.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+}
+
+.VM {
+	background: url("../images/VM.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+}
+
+.Event {
+	background: url("../images/Event.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+}
+
+.AmazonAgent {
+	background: url("../images/Amazon.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+}
+
+.MoodleDB {
+	background: url("../images/MoodleDB.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+}
+
+.Duality {
+	background: url("../images/Duality.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+}
+
+.w .properties {
+	display: none;
+}
+
+.properties-handler.expand-properties {
+	background: none repeat scroll 0 0 #FF0000;
+	border-radius: 5px;
+	cursor: n-resize;
+	height: 6px;
+	margin-top: 10px;
+}
+
+.w .properties form {
+	width: 152px;
+}

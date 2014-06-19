@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.cloudface.org/schema/namespace/tosca/cream"
+	xmlns="http://www.cloudface.org/schema/namespace/tosca/cream" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified">
+
+
+	<xs:element name="MoodleWebApplicationProperties">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="tMoodleWebApplicationProperties" />
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="tMoodleWebApplicationProperties">
+		<xs:sequence>
+			<xs:element name="AdminUser" type="xs:string" maxOccurs="1"
+				minOccurs="0" />
+			<xs:element name="AdminPassword" type="xs:string"
+				maxOccurs="1" minOccurs="0" />
+			<xs:element name="DataRoot" type="xs:string" maxOccurs="1"
+				minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+
+
+</xs:schema>

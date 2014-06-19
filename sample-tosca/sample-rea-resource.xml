@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ResourceModel id="Moodle" name="Moodle Template">
+	<BulkResource name="MySQLDatabase" id="MySQLDatabaseBulkResource">
+		<TypeProperties>
+			<Property name="DBUser" type="VARCHAR" />
+			<Property name="DBPassword" type="VARCHAR" />
+			<Property name="mySqlPort" type="VARCHAR" />
+		</TypeProperties>
+	</BulkResource>
+	<BulkResource super="MySQLDatabaseBulkResource" name="MoodleDb"
+		id="MoodleDbBulkResource">
+		<TypeProperties>
+			<Property name="DBName" type="VARCHAR" />
+		</TypeProperties>
+	</BulkResource>
+	<Resource name="Moodle DB" id="MoodleDB">
+		<ObjectProperties>
+			<Property name="ConfigPath" type="VARCHAR" />
+		</ObjectProperties>
+	</Resource>
+</ResourceModel>
+

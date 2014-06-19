@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tosca:Definitions xmlns:tosca="http://docs.oasis-open.org/tosca/ns/2011/12"
+	id="cream_contract_policy_definition" name="Contract Policy Type">
+	<tosca:PolicyType name="Contract"
+		targetNamespace="http://www.cloudface.org/tosca/Types/Contract">
+	</tosca:PolicyType>
+</tosca:Definitions>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tosca:Definitions xmlns:tosca="http://docs.oasis-open.org/tosca/ns/2011/12"
+	id="cream_php_module_definition">
+
+	<tosca:NodeType name="ApachePHPModule"
+		targetNamespace="http://www.cloudface.org/tosca/Types/ApachePHPModule">
+		<tosca:documentation>Apache PHP Module</tosca:documentation>
+
+	</tosca:NodeType>
+</tosca:Definitions>

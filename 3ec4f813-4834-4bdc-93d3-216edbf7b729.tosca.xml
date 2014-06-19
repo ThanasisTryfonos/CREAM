@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Definitions xmlns="http://docs.oasis-open.org/tosca/ns/2011/12"
+	xmlns:ns2="http://www.cloudface.org/schema/namespace/tosca/cream"
+	targetNamespace="" id="">
+	<Import importType="http://docs.oasis-open.org/tosca/ns/2011/12"
+		location="/cream/ToscaTemplates/HuaaS/Instructor" />
+	<Import importType="http://docs.oasis-open.org/tosca/ns/2011/12"
+		location="/cream/ToscaTemplates/SaaS/MoodleWebApplication" />
+	<Import importType="http://docs.oasis-open.org/tosca/ns/2011/12"
+		location="/cream/ToscaTemplates/SaaS/ApachePHPModule" />
+	<Import importType="http://docs.oasis-open.org/tosca/ns/2011/12"
+		location="/cream/ToscaTemplates/SaaS/MoodleDB" />
+	<Import importType="http://docs.oasis-open.org/tosca/ns/2011/12"
+		location="/cream/ToscaTemplates/SaaS/MySQL" />
+	<Import importType="http://docs.oasis-open.org/tosca/ns/2011/12"
+		location="/cream/ToscaTemplates/IaaS/Ubuntu" />
+	<Import importType="http://docs.oasis-open.org/tosca/ns/2011/12"
+		location="/cream/ToscaTemplates/IaaS/VM" />
+	<Import importType="http://docs.oasis-open.org/tosca/ns/2011/12"
+		location="/cream/ToscaTemplates/IaaS/AmazonEC2" />
+	<Import importType="http://docs.oasis-open.org/tosca/ns/2011/12"
+		location="/cream/ToscaTemplates/SaaS/ApacheWebServer" />
+	<Import importType="http://docs.oasis-open.org/tosca/ns/2011/12"
+		location="/cream/ToscaTemplates/Agent/University" />
+	<Import importType="http://docs.oasis-open.org/tosca/ns/2011/12"
+		location="/cream/ToscaTemplates/Policy/Contract" />
+	<Import importType="http://docs.oasis-open.org/tosca/ns/2011/12"
+		location="/cream/ToscaTemplates/Policy/Commitment" />
+	<Import importType="http://docs.oasis-open.org/tosca/ns/2011/12"
+		location="/cream/ToscaTemplates/Agent/AmazonAgent" />
+	<ServiceTemplate id="">
+		<TopologyTemplate>
+			<RelationshipTemplate name="consume" type=""
+				id="con_7">
+				<SourceElement ref="node-0-45018cb9-e66e-495e-8820-0efd7c59d10a" />
+				<TargetElement ref="node-0-89e03423-a564-4a68-a467-d184224c60eb" />
+			</RelationshipTemplate>
+			<RelationshipTemplate name="depends on" type=""
+				id="con_21">
+				<SourceElement ref="node-0-89e03423-a564-4a68-a467-d184224c60eb" />
+				<TargetElement ref="node-0-24af416a-0dc0-48e7-8cd7-2be9a180b490" />
+			</RelationshipTemplate>
+			<RelationshipTemplate name="Connects to" type=""
+				id="con_46">
+				<SourceElement ref="node-0-89e03423-a564-4a68-a467-d184224c60eb" />
+				<TargetElement ref="node-0-27015f90-abf8-4bef-a986-670a65617f33" />
+			</RelationshipTemplate>
+			<RelationshipTemplate name="hosted on" type=""
+				id="con_60">
+				<SourceElement ref="node-0-27015f90-abf8-4bef-a986-670a65617f33" />
+				<TargetElement ref="node-0-5b78b91a-bf68-429c-8d5e-16901fb8c5b6" />
+			</RelationshipTemplate>
+			<RelationshipTemplate name="hosted on" type=""
+				id="con_74">
+				<SourceElement ref="node-0-5b78b91a-bf68-429c-8d5e-16901fb8c5b6" />
+				<TargetElement ref="node-0-441c5e52-34e2-4ce9-9e1c-c62a405e2eaf" />
+			</RelationshipTemplate>
+			<RelationshipTemplate name="hosted on" type=""
+				id="con_88">
+				<SourceElement ref="node-0-441c5e52-34e2-4ce9-9e1c-c62a405e2eaf" />
+				<TargetElement ref="node-0-cf8c2af8-3d8a-4abb-a0b6-39c5638d3c5c" />
+			</RelationshipTemplate>
+			<RelationshipTemplate name="hosted on" type=""
+				id="con_102">
+				<SourceElement ref="node-0-cf8c2af8-3d8a-4abb-a0b6-39c5638d3c5c" />
+				<TargetElement ref="node-0-b4524dce-f8f6-4bf9-ba3f-2c131a45ad77" />
+			</RelationshipTemplate>
+			<RelationshipTemplate name="hosted on" type=""
+				id="con_116">
+				<SourceElement ref="node-0-89e03423-a564-4a68-a467-d184224c60eb" />
+				<TargetElement ref="node-0-1c84c21d-6ba5-495f-82be-fb109d88a4d5" />
+			</RelationshipTemplate>
+			<RelationshipTemplate name="installed on" type=""
+				id="con_130">
+				<SourceElement ref="node-0-24af416a-0dc0-48e7-8cd7-2be9a180b490" />
+				<TargetElement ref="node-0-1c84c21d-6ba5-495f-82be-fb109d88a4d5" />
+			</RelationshipTemplate>
+			<RelationshipTemplate name="hosted on" type=""
+				id="con_144">
+				<SourceElement ref="node-0-1c84c21d-6ba5-495f-82be-fb109d88a4d5" />
+				<TargetElement ref="node-1-441c5e52-34e2-4ce9-9e1c-c62a405e2eaf" />
+			</RelationshipTemplate>
+			<RelationshipTemplate name="hosted on" type=""
+				id="con_158">
+				<SourceElement ref="node-1-441c5e52-34e2-4ce9-9e1c-c62a405e2eaf" />
+				<TargetElement ref="node-1-cf8c2af8-3d8a-4abb-a0b6-39c5638d3c5c" />
+			</RelationshipTemplate>
+			<RelationshipTemplate name="hosted on" type=""
+				id="con_172">
+				<SourceElement ref="node-1-cf8c2af8-3d8a-4abb-a0b6-39c5638d3c5c" />
+				<TargetElement ref="node-1-b4524dce-f8f6-4bf9-ba3f-2c131a45ad77" />
+			</RelationshipTemplate>
+			<RelationshipTemplate name="party" type=""
+				id="con_186">
+				<SourceElement ref="node-0-dfe9e846-2ccb-45b5-95dd-1766c649c7e8" />
+				<TargetElement ref="node-0-33abacd1-c385-45d5-ad16-5e12c8fe3f3b" />
+			</RelationshipTemplate>
+			<RelationshipTemplate name="produce-consume"
+				type="" id="con_200">
+				<SourceElement ref="node-0-dfe9e846-2ccb-45b5-95dd-1766c649c7e8" />
+				<TargetElement ref="node-0-a3f2a54d-a5fe-4888-8203-92c8253edca9" />
+			</RelationshipTemplate>
+			<RelationshipTemplate name="fulfillment" type=""
+				id="con_214">
+				<SourceElement ref="node-0-33abacd1-c385-45d5-ad16-5e12c8fe3f3b" />
+				<TargetElement ref="node-1-a3f2a54d-a5fe-4888-8203-92c8253edca9" />
+			</RelationshipTemplate>
+			<RelationshipTemplate name="fulfillment" type=""
+				id="con_228">
+				<SourceElement ref="node-0-dfe9e846-2ccb-45b5-95dd-1766c649c7e8" />
+				<TargetElement ref="node-1-33abacd1-c385-45d5-ad16-5e12c8fe3f3b" />
+			</RelationshipTemplate>
+			<RelationshipTemplate name="allocation-release"
+				type="" id="con_242">
+				<SourceElement ref="node-0-a3f2a54d-a5fe-4888-8203-92c8253edca9" />
+				<TargetElement ref="node-0-a381ceee-6536-4cfe-8b8f-2a231f6289d1" />
+			</RelationshipTemplate>
+			<RelationshipTemplate name="fulfillment" type=""
+				id="con_256">
+				<SourceElement ref="node-1-33abacd1-c385-45d5-ad16-5e12c8fe3f3b" />
+				<TargetElement ref="node-0-a381ceee-6536-4cfe-8b8f-2a231f6289d1" />
+			</RelationshipTemplate>
+			<ns3:NodeTemplate xmlns:ns3="http://docs.oasis-open.org/tosca/ns/2011/12"
+				xmlns="" type="VM" id="node-1-cf8c2af8-3d8a-4abb-a0b6-39c5638d3c5c" />
+			<ns3:NodeTemplate xmlns:ns3="http://docs.oasis-open.org/tosca/ns/2011/12"
+				xmlns="" type="Instructor" id="node-0-45018cb9-e66e-495e-8820-0efd7c59d10a">
+				<ns3:Properties>
+					<ns2:HumanResourcePropertiesDefinition />
+				</ns3:Properties>
+			</ns3:NodeTemplate>
+			<ns3:NodeTemplate xmlns:ns3="http://docs.oasis-open.org/tosca/ns/2011/12"
+				xmlns="" type="Commitment" id="node-0-a3f2a54d-a5fe-4888-8203-92c8253edca9" />
+			<ns3:NodeTemplate xmlns:ns3="http://docs.oasis-open.org/tosca/ns/2011/12"
+				xmlns="" type="VM" id="node-0-cf8c2af8-3d8a-4abb-a0b6-39c5638d3c5c" />
+			<ns3:NodeTemplate xmlns:ns3="http://docs.oasis-open.org/tosca/ns/2011/12"
+				xmlns="" type="AmazonAgent" id="node-0-a381ceee-6536-4cfe-8b8f-2a231f6289d1" />
+			<ns3:NodeTemplate xmlns:ns3="http://docs.oasis-open.org/tosca/ns/2011/12"
+				xmlns="" type="Contract" id="node-1-33abacd1-c385-45d5-ad16-5e12c8fe3f3b" />
+			<ns3:NodeTemplate xmlns:ns3="http://docs.oasis-open.org/tosca/ns/2011/12"
+				xmlns="" type="MoodleDB" id="node-0-27015f90-abf8-4bef-a986-670a65617f33">
+				<ns3:Properties>
+					<ns2:MoodleDatabasePropertiesDefinition />
+				</ns3:Properties>
+			</ns3:NodeTemplate>
+			<ns3:NodeTemplate xmlns:ns3="http://docs.oasis-open.org/tosca/ns/2011/12"
+				xmlns="" type="Ubuntu" id="node-1-441c5e52-34e2-4ce9-9e1c-c62a405e2eaf" />
+			<ns3:NodeTemplate xmlns:ns3="http://docs.oasis-open.org/tosca/ns/2011/12"
+				xmlns="" type="MySQL" id="node-0-5b78b91a-bf68-429c-8d5e-16901fb8c5b6">
+				<ns3:Properties>
+					<ns2:MySQLProperties />
+				</ns3:Properties>
+			</ns3:NodeTemplate>
+			<ns3:NodeTemplate xmlns:ns3="http://docs.oasis-open.org/tosca/ns/2011/12"
+				xmlns="" type="Contract" id="node-0-33abacd1-c385-45d5-ad16-5e12c8fe3f3b" />
+			<ns3:NodeTemplate xmlns:ns3="http://docs.oasis-open.org/tosca/ns/2011/12"
+				xmlns="" type="MoodleWebApplication" id="node-0-89e03423-a564-4a68-a467-d184224c60eb">
+				<ns3:Properties>
+					<ns2:MoodleWebApplicationProperties />
+				</ns3:Properties>
+			</ns3:NodeTemplate>
+			<ns3:NodeTemplate xmlns:ns3="http://docs.oasis-open.org/tosca/ns/2011/12"
+				xmlns="" type="AmazonEC2" id="node-0-b4524dce-f8f6-4bf9-ba3f-2c131a45ad77">
+				<ns3:Properties>
+					<ns2:AmazonEC2Properties />
+				</ns3:Properties>
+			</ns3:NodeTemplate>
+			<ns3:NodeTemplate xmlns:ns3="http://docs.oasis-open.org/tosca/ns/2011/12"
+				xmlns="" type="AmazonEC2" id="node-1-b4524dce-f8f6-4bf9-ba3f-2c131a45ad77">
+				<ns3:Properties>
+					<ns2:AmazonEC2Properties />
+				</ns3:Properties>
+			</ns3:NodeTemplate>
+			<ns3:NodeTemplate xmlns:ns3="http://docs.oasis-open.org/tosca/ns/2011/12"
+				xmlns="" type="University" id="node-0-dfe9e846-2ccb-45b5-95dd-1766c649c7e8" />
+			<ns3:NodeTemplate xmlns:ns3="http://docs.oasis-open.org/tosca/ns/2011/12"
+				xmlns="" type="Ubuntu" id="node-0-441c5e52-34e2-4ce9-9e1c-c62a405e2eaf" />
+			<ns3:NodeTemplate xmlns:ns3="http://docs.oasis-open.org/tosca/ns/2011/12"
+				xmlns="" type="Commitment" id="node-1-a3f2a54d-a5fe-4888-8203-92c8253edca9" />
+			<ns3:NodeTemplate xmlns:ns3="http://docs.oasis-open.org/tosca/ns/2011/12"
+				xmlns="" type="ApacheWebServer" id="node-0-1c84c21d-6ba5-495f-82be-fb109d88a4d5">
+				<ns3:Properties>
+					<ns2:ApacheWebServerProperties />
+				</ns3:Properties>
+			</ns3:NodeTemplate>
+			<ns3:NodeTemplate xmlns:ns3="http://docs.oasis-open.org/tosca/ns/2011/12"
+				xmlns="" type="ApachePHPModule" id="node-0-24af416a-0dc0-48e7-8cd7-2be9a180b490" />
+		</TopologyTemplate>
+	</ServiceTemplate>
+</Definitions>

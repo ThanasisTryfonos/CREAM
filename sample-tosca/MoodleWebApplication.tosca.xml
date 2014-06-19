@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tosca:Definitions xmlns:tosca="http://docs.oasis-open.org/tosca/ns/2011/12"
+	id="cream_moodle_web_app_definition">
+
+	<tosca:NodeType name="MoodleWebApplication"
+		targetNamespace="http://www.cloudface.org/tosca/Types/MoodleWebApplication">
+		<tosca:documentation>Moodle Web Application</tosca:documentation>
+		<tosca:PropertiesDefinition
+			xmlns:cream="http://www.cloudface.org/schema/namespace/tosca/cream"
+			type="cream:MoodleWebApplicationProperties" />
+	</tosca:NodeType>
+</tosca:Definitions>

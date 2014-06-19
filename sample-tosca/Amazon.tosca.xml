@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tosca:Definitions xmlns:tosca="http://docs.oasis-open.org/tosca/ns/2011/12"
+	id="cream_amazon_agent_definition">
+
+	<tosca:NodeType name="AmazonAgent"
+		targetNamespace="http://www.cloudface.org/tosca/Types/AmazonAgent">
+		<tosca:documentation>Amazon Agent</tosca:documentation>
+	</tosca:NodeType>
+</tosca:Definitions>

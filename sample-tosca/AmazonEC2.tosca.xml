@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tosca:Definitions xmlns:tosca="http://docs.oasis-open.org/tosca/ns/2011/12"
+	id="cream_amazonec2_definition">
+
+	<tosca:NodeType name="AmazonEC2"
+		targetNamespace="http://www.cloudface.org/tosca/Types/AmazonEC2">
+
+		<tosca:PropertiesDefinition
+			xmlns:cream="http://www.cloudface.org/schema/namespace/tosca/cream"
+			type="cream:AmazonEC2Properties" />
+	</tosca:NodeType>
+</tosca:Definitions>

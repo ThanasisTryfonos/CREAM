@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PlanningModel name="Moodle DB deployment" id="moodleDBDeployment">
+	<PIecrement>
+		<EventType name="install" id="install">
+		</EventType>
+		<EventType name="configure" id="configure">
+		</EventType>
+		<EventType name="start" id="start">
+		</EventType>
+		<EventType name="uninstall" id="uninstall">
+		</EventType>
+	</PIecrement>
+</PlanningModel>

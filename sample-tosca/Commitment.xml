@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tosca:Definitions xmlns:tosca="http://docs.oasis-open.org/tosca/ns/2011/12"
+	id="cream_commitment_policy_definition" name="Commitment Policy Type">
+	<tosca:PolicyType name="Commitment"
+		targetNamespace="http://www.cloudface.org/tosca/Types/Commitment">
+	</tosca:PolicyType>
+</tosca:Definitions>
